@@ -1,0 +1,135 @@
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #2a23f6;
+    color: white;
+    padding: 15px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Category Button Colors */
+.category[data-category="Wines"] {
+    background-color: #00008B; /* Dark Blue */
+    color: blue;
+}
+
+.category[data-category="Spirits"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+    color: white;
+}
+
+.category[data-category="Vodka"] {
+    background-color: #800080; /* Purple */
+    color: white;
+}
+
+.category[data-category="Brandy"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+    color: white;
+}
+
+.category[data-category="Whiskey"] {
+    background-color: #ADD8E6; /* Light Blue */
+    color: black;
+}
+
+.category[data-category="Tequila"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+    color: white;
+}
+
+.category[data-category="Soft Drinks"] {
+    background-color: #D2B48C; /* Light Brown/Beige */
+    color: black;
+}
+
+/* Product Rectangular Boxes */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    color: white; /* Default text color */
+}
+
+/* Matching product box colors */
+.product[data-category="Wines"] {
+    background-color: #00008B; /* Dark Blue */
+}
+
+.product[data-category="Spirits"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+}
+
+.product[data-category="Vodka"] {
+    background-color: #800080; /* Purple */
+}
+
+.product[data-category="Brandy"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+}
+
+.product[data-category="Whiskey"] {
+    background-color: #ADD8E6; /* Light Blue */
+    color: black; /* Text color for better contrast */
+}
+
+.product[data-category="Tequila"] {
+    background-color: #008080; /* Teal/Greenish Blue */
+}
+
+.product[data-category="Soft Drinks"] {
+    background-color: #D2B48C; /* Light Brown/Beige */
+    color: black; /* Text color for better contrast */
+}
+
+/* Admin Panel */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Hide elements */
+.hidden {
+    display: none;
+}
